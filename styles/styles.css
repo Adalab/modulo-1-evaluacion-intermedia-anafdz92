@@ -41,7 +41,8 @@
 .menuList li {
   padding-top: 10px;
   padding-bottom: 13px;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-transform: uppercase;
   color: var(--text-color-menu);
   font-family: var(--font-primary);
