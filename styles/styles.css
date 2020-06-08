@@ -7,72 +7,79 @@
 }
 
 :root {
-  --font-primary:font-family: 'Rubik', sans-serif;
-  --text-color-menu:#4a4a4a;
-  --main-color:#3CDBC0;
-  --text-color-main:#FFFFFF;
+  --font-primary: "Rubik", sans-serif;
+  --text-color-menu: #4a4a4a;
+  --main-color: #3cdbc0;
+  --text-color-main: #ffffff;
 }
 
-.header{
-    width: 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+.body {
+  font-family: var(--font-primary);
+}
+
+.headerMain {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
 .logoAdalab {
-    width: 115px;
+  width: 115px;
+  color: var(--text-color-menu);
 }
 
 .menuList {
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
 }
 
 .menuList li {
-    padding-top: 10px;
-    padding-bottom: 13px;
-    padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: var(--text-color-menu);
+  font-family: var(--font-primary);
 }
 .mainSection {
-    background-color:var(--main-color) ;
-    color: var(--text-color-main);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    font-size: 30px;
+  background-color: var(--main-color);
+  color: var(--text-color-main);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: var(--font-primary);
 }
 
-@media all and (min-width:768px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+@media all and (min-width: 768px) {
+  .headerMain {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .menuList {
-        font-size: 16px;
-    }
+  .logoAdalab {
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .mainSection {
-        font-size: 40px;
-        }
+  .menuList li {
+    margin-right: 30px;
+    padding: 20px;
+  }
 
-    .menuList li {
-        margin-right: 30px;
-        padding: 20px;
-    }
-
-    .logoAdalab {
-        margin-left: 30px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+  .mainSection {
+    font-size: 40px;
+  }
 }
-    
-
